@@ -17,11 +17,12 @@
 
             </div>
 
-            <h:commandButton value="submit" action="#{filmListBean.performSearch()}" />
+            <h:commandButton value="submit" action="#{filmListBean.performSearch()}" /><br/>
 
             <ui:repeat value="#{filmListBean.getSearchResults()}" var="value">
-                #{value.getTitle()}
-                <h1>Film being put here</h1>
+                <h1>#{value.getTitle()}(#{value.getReleaseYear()})</h1>
+                | #{value.getAgeRating()} | #{value.getLength()}min | Rent for £#{value.getRentalRate()} | <br/>
+                #{value.getDescription()}
 
             </ui:repeat>
 
