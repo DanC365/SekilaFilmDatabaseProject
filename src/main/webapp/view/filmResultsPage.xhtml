@@ -24,8 +24,11 @@
             <ui:repeat value="#{filmSearchResultsBean.getSearchResults()}" var="value">
                 <h1><h:commandLink action="#{filmBean.setActiveFilm(value)}">#{value.getTitle()}(#{value.getReleaseYear()})</h:commandLink></h1>
                 | #{value.getAgeRating()} | #{value.getLength()}min | Rent for £#{value.getRentalRate()} | <br/>
-                #{value.getDescription()}
-
+                #{value.getDescription()}<br/>
+                <h3>Starring: </h3>
+                <ui:repeat value="#{filmSearchResultsBean.actors.get(value)}" var="actor">
+                    #{actor.firstName} #{actor.lastName} <br/>
+                </ui:repeat>
             </ui:repeat>
 
         </h:form>
