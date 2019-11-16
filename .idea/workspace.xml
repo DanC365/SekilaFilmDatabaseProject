@@ -7,12 +7,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e219d84-4f64-40eb-bfab-0fcf03037ee3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/SearchQueryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/actors/ActorBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/actors/ActorFilmBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/actors/ActorSearchResultsBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/films/FilmActorBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/ActorSearcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/actorDetails.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/actorResultsPage.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/actorSearchPage.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/FilmSearchResultsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/FilmSearchResultsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/FilmBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/films/FilmBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/FilmListBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/FilmSearchResultsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/films/FilmSearchResultsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/FilmSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/FilmSearcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/headerTemplate.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/headerTemplate.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/filmDetails.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/filmDetails.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/filmResultsPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/filmResultsPage.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/FilmSearchResultsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/FilmSearchResultsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/filmSearchPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/filmSearchPage.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/signIn.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/signIn.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/FilmBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/FilmListBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/FilmSearchResultsBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/services/FilmSearcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/services/FilmSearcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/templates/headerTemplate.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/templates/headerTemplate.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/view/filmDetails.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/view/filmDetails.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FilmDatabase/view/filmResultsPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/view/filmResultsPage.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/FilmSearchResultsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/FilmSearchResultsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/view/filmSearchPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/view/filmSearchPage.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/view/signIn.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/view/signIn.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/FilmBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/FilmListBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/FilmSearchResultsBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/services/FilmSearcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/services/FilmSearcher.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +141,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/actors" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -124,14 +153,15 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\WEB-INF\templates" />
-      <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\resources" />
-      <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\WEB-INF" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\java\com\sparta\pdf\beans\actors" />
+      <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\WEB-INF\templates" />
+      <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\resources" />
+      <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -234,7 +264,9 @@
       <workItem from="1573912754892" duration="200000" />
       <workItem from="1573913170698" duration="108000" />
       <workItem from="1573913495636" duration="471000" />
-      <workItem from="1573914154498" duration="5784000" />
+      <workItem from="1573914154498" duration="8893000" />
+      <workItem from="1573923789305" duration="1394000" />
+      <workItem from="1573925417825" duration="661000" />
     </task>
     <servers />
   </component>
@@ -253,5 +285,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/actors/ActorBean.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

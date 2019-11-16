@@ -1,4 +1,4 @@
-package com.sparta.pdf.beans;
+package com.sparta.pdf.beans.films;
 
 import com.sparta.pdf.components.Actor;
 import com.sparta.pdf.components.Film;
@@ -14,13 +14,11 @@ import java.util.List;
 public class FilmBean {
 
     private Film activeFilm;
-    private List<Actor> actorList;
     @Inject
     FilmActorRetriever filmActorRetriever;
 
     public String setActiveFilm(Film film){
         activeFilm = film;
-        setActorList();
         return "filmDetails";
     }
 
@@ -28,12 +26,6 @@ public class FilmBean {
         return activeFilm;
     }
 
-    private void setActorList(){
-        actorList = filmActorRetriever.getActorsByFilmId(activeFilm.getFilmId());
-    }
 
-    public List<Actor> getActorList(){
-        return actorList;
-    }
 
 }

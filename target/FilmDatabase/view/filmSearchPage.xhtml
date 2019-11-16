@@ -13,11 +13,11 @@
 
             <div class="search">
 
-                Search by film name: <br/><h:inputText value="#{filmListBean.searchQuery}"/><br/>
+                Search by film name: <br/><h:inputText value="#{searchQueryBean.searchQuery}"/><br/>
 
             </div>
 
-            <h:commandButton value="submit" action="#{filmListBean.performSearch()}" />
+            <h:commandButton value="submit" action="filmResultsPage" />
         </h:form>
     </ui:define>
 </ui:composition>

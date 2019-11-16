@@ -8,13 +8,14 @@
 <ui:composition template="/WEB-INF/templates/template.xhtml">
     <ui:define name="content">
         <h1>#{filmBean.activeFilm.getTitle()}(#{filmBean.activeFilm.releaseYear})</h1>
-
+        #{filmActorBean.setActorList(filmBean.activeFilm)}
         <h2>Starring: </h2>
-        <ui:repeat value="#{filmBean.actorList}" var="actor">
-            #{actor.firstName} #{actor.lastName}<br/>
+        <h:form>
+        <ui:repeat value="#{filmActorBean.actorList}" var="actor">
+            <h:commandLink action="#{actorBean.setActiveActor(actor)}">#{actor.firstName} #{actor.lastName}</h:commandLink><br/>
 
         </ui:repeat>
-
+        </h:form>
     </ui:define>
 </ui:composition>
 </html>

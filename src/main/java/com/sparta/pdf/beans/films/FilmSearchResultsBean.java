@@ -1,4 +1,4 @@
-package com.sparta.pdf.beans;
+package com.sparta.pdf.beans.films;
 
 import com.sparta.pdf.components.Actor;
 import com.sparta.pdf.components.Film;

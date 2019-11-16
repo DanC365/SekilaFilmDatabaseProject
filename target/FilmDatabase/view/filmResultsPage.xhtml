@@ -7,18 +7,18 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <ui:composition template="/WEB-INF/templates/template.xhtml">
     <ui:define name="content">
-        <h1>Results for search "#{filmListBean.searchQuery}"</h1>
+        <h1>Results for search "#{searchQueryBean.searchQuery}"</h1>
 
-        #{filmSearchResultsBean.performSearch(filmListBean.searchQuery)}
+        #{filmSearchResultsBean.performSearch(searchQueryBean.searchQuery)}
         <h:form>
 
             <div class="search">
 
-                Search by film name: <br/><h:inputText value="#{filmListBean.searchQuery}"/><br/>
+                Search by film name: <br/><h:inputText value="#{searchQueryBean.searchQuery}"/><br/>
 
             </div>
 
-            <h:commandButton value="submit" action="#{filmListBean.performSearch()}" /><br/>
+            <h:commandButton value="submit" action="filmResultsPage" /><br/>
             #{filmSearchResultsBean.getSearchResults().size()} results<br/>
 
             <ui:repeat value="#{filmSearchResultsBean.getSearchResults()}" var="value">
@@ -27,7 +27,7 @@
                 #{value.getDescription()}<br/>
                 <h3>Starring: </h3>
                 <ui:repeat value="#{filmSearchResultsBean.actors.get(value)}" var="actor">
-                    #{actor.firstName} #{actor.lastName}
+                    <h:commandLink action="#{actorBean.setActiveActor(actor)}">#{actor.firstName} #{actor.lastName} </h:commandLink><br/>
                 </ui:repeat>
             </ui:repeat>
 
