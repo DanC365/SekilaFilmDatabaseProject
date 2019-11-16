@@ -7,23 +7,14 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <ui:composition template="/WEB-INF/templates/template.xhtml">
     <ui:define name="content">
-        <h1>Search film library</h1>
+        <h1>#{filmBean.activeFilm.getTitle()}(#{filmBean.activeFilm.releaseYear})</h1>
 
-        <h:form>
+        <h2>Starring: </h2>
+        <ui:repeat value="#{filmBean.actorList}" var="actor">
+            #{actor.firstName} #{actor.lastName}<br/>
 
-            <div class="search">
+        </ui:repeat>
 
-                Search by film name: <br/><h:inputText value="#{filmListBean.searchQuery}"/><br/>
-
-            </div>
-
-            <h:commandButton value="submit" action="#{filmListBean.performSearch()}" />
-        </h:form>
     </ui:define>
 </ui:composition>
-
-
-
-
-
 </html>

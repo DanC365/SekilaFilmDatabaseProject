@@ -7,9 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e219d84-4f64-40eb-bfab-0fcf03037ee3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/FilmBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/FilmSearchResultsBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/FilmActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/FilmActorRetriever.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/filmDetails.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/FilmListBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/FilmListBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/filmResultsPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/filmResultsPage.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/filmSearchPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/filmSearchPage.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/FilmListBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/FilmListBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FilmDatabase/view/filmResultsPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/view/filmResultsPage.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/view/filmSearchPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/view/filmSearchPage.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/FilmListBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/FilmListBean.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +76,14 @@
         <item name="sakila: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="film: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sakila@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sakila: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="film_actor: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -219,7 +237,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573825931455</updated>
-      <workItem from="1573825938024" duration="16796000" />
+      <workItem from="1573825938024" duration="19660000" />
+      <workItem from="1573912754892" duration="200000" />
+      <workItem from="1573913170698" duration="108000" />
+      <workItem from="1573913495636" duration="471000" />
+      <workItem from="1573914154498" duration="4517000" />
     </task>
     <servers />
   </component>
@@ -231,7 +253,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
