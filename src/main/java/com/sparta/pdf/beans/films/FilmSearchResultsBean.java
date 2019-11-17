@@ -1,6 +1,7 @@
 package com.sparta.pdf.beans.films;
 
 import com.sparta.pdf.components.Actor;
+import com.sparta.pdf.components.Category;
 import com.sparta.pdf.components.Film;
 import com.sparta.pdf.services.FilmActorRetriever;
 import com.sparta.pdf.services.FilmSearcher;
@@ -23,10 +24,25 @@ public class FilmSearchResultsBean implements Serializable {
     private FilmActorRetriever filmActorRetriever;
     private List<Film> searchResults=new ArrayList<>();
     private Map<Film,List<Actor>> actors;
+    private Map<Film,List<Category>> categories;
 
     public void performSearch(String searchQuery){
         searchResults = filmSearcher.doSearch(searchQuery);
         populateActors();
+        populateCategories();
+    }
+
+    public Map<Film, List<Category>> getCategories() {
+        return categories;
+    }
+
+
+
+    private void populateCategories() {
+        categories = new HashMap<>();
+        for(Film film:searchResults){
+            categories.put(film,filmSearcher.getCategories(film.getFilmId()));
+        }
     }
 
     private void populateActors(){
@@ -43,5 +59,19 @@ public class FilmSearchResultsBean implements Serializable {
 
     public Map<Film,List<Actor>> getActors(){
         return actors;
+    }
+
+    public String getCategoriesString(Film film) {
+        String output = "";
+        List<Category> categoryList = categories.get(film);
+        for(int i=0;i<categoryList.size();i++){
+            output+=categoryList.get(i).getName();
+            if(i<categoryList.size()-1){
+                output+="/";
+            }
+
+        }
+        return output;
+
     }
 }

@@ -23,8 +23,10 @@
 
             <ui:repeat value="#{filmSearchResultsBean.getSearchResults()}" var="value">
                 <h1><h:commandLink action="#{filmBean.setActiveFilm(value)}">#{value.getTitle()}(#{value.getReleaseYear()})</h:commandLink></h1>
-                | #{value.getAgeRating()} | #{value.getLength()}min | Rent for £#{value.getRentalRate()} | <br/>
-                #{value.getDescription()}<br/>
+                | #{value.getAgeRating()} | #{value.getLength()}min | Rent for £#{value.getRentalRate()} | #{filmSearchResultsBean.getCategoriesString(value)} |<br/>
+                #{value.getDescription()}
+
+                <br/>
                 <h3>Starring: </h3>
                 <ui:repeat value="#{filmSearchResultsBean.actors.get(value)}" var="actor">
                     <h:commandLink action="#{actorBean.setActiveActor(actor)}">#{actor.firstName} #{actor.lastName} </h:commandLink><br/>

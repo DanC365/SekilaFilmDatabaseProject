@@ -1,5 +1,6 @@
 package com.sparta.pdf.services;
 
+import com.sparta.pdf.components.Category;
 import com.sparta.pdf.components.Film;
 
 import javax.ejb.Stateless;
@@ -21,6 +22,13 @@ public class FilmSearcher {
         Query query = entityManager.createNamedQuery("getFilmByName");
         query.setParameter("searchTitle", searchQuery);
         List<Film> results = query.getResultList();
+        return results;
+    }
+
+    public List<Category> getCategories(int filmId){
+        Query query = entityManager.createNamedQuery("getFilmCategories");
+        query.setParameter("filmId",filmId);
+        List<Category> results = query.getResultList();
         return results;
     }
 }
