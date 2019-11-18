@@ -1,14 +1,12 @@
 package com.sparta.pdf.beans.films;
 
 import com.sparta.pdf.components.Actor;
-import com.sparta.pdf.components.Category;
 import com.sparta.pdf.components.Film;
 import com.sparta.pdf.services.FilmActorRetriever;
 import com.sparta.pdf.services.FilmSearcher;
 
 import javax.enterprise.context.Conversation;
 import javax.enterprise.context.ConversationScoped;
-import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
@@ -27,7 +25,7 @@ public class FilmSearchResultsBean implements Serializable {
     private FilmActorRetriever filmActorRetriever;
     private List<Film> searchResults=new ArrayList<>();
     private Map<Film,List<Actor>> actors;
-    private Map<Film,List<Category>> categories;
+    //private Map<Film,List<Category>> categories;
 
     @Inject
     private Conversation conversation;
@@ -36,21 +34,11 @@ public class FilmSearchResultsBean implements Serializable {
         searchResults = filmSearcher.doSearch(searchQuery);
         conversation.begin();
         populateActors();
-        populateCategories();
-    }
-
-    public Map<Film, List<Category>> getCategories() {
-        return categories;
     }
 
 
 
-    private void populateCategories() {
-        categories = new HashMap<>();
-        for(Film film:searchResults){
-            categories.put(film,filmSearcher.getCategories(film.getFilmId()));
-        }
-    }
+
 
     private void populateActors(){
         actors = new HashMap<>();
@@ -70,10 +58,10 @@ public class FilmSearchResultsBean implements Serializable {
 
     public String getCategoriesString(Film film) {
         String output = "";
-        List<Category> categoryList = categories.get(film);
-        for(int i=0;i<categoryList.size();i++){
-            output+=categoryList.get(i).getName();
-            if(i<categoryList.size()-1){
+
+        for(int i=0;i<film.getCategories().size();i++){
+            output+=film.getCategories().get(i).getName();
+            if(i<film.getCategories().size()-1){
                 output+="/";
             }
 

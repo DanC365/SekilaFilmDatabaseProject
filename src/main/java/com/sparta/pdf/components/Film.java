@@ -3,6 +3,7 @@ package com.sparta.pdf.components;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "film")
@@ -25,7 +26,10 @@ public class Film {
     private String description;
     @Column(name = "release_year")
     private int releaseYear;
-    //language id
+    @Column(name = "language_id")
+    private int languageId;
+    @Column(name = "original_language_id")
+    private int originalLanguageId;
     @Column(name = "rental_duration")
     private int rentalDuration;
     @Column(name = "rental_rate")
@@ -40,6 +44,22 @@ public class Film {
     private String specialFeatures;
     @Column(name = "last_update")
     private LocalDateTime lastUpdated;
+
+    @ManyToOne
+    @PrimaryKeyJoinColumn(name = "language_id")
+    private Language language;
+
+    @ManyToOne
+    @PrimaryKeyJoinColumn(name = "original_language_id")
+    private Language originalLanguage;
+
+    @ManyToMany
+    @JoinTable(
+        name = "film_category",
+        joinColumns = @JoinColumn(name = "film_id"),
+        inverseJoinColumns = @JoinColumn(name = "category_id")
+    )
+    private List<Category> categories;
 
     public int getFilmId() {
         return filmId;
@@ -127,5 +147,45 @@ public class Film {
 
     public void setLastUpdated(LocalDateTime lastUpdated) {
         this.lastUpdated = lastUpdated;
+    }
+
+    public int getLanguageId() {
+        return languageId;
+    }
+
+    public void setLanguageId(int languageId) {
+        this.languageId = languageId;
+    }
+
+    public int getOriginalLanguageId() {
+        return originalLanguageId;
+    }
+
+    public void setOriginalLanguageId(int originalLanguageId) {
+        this.originalLanguageId = originalLanguageId;
+    }
+
+    public Language getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(Language language) {
+        this.language = language;
+    }
+
+    public Language getOriginalLanguage() {
+        return originalLanguage;
+    }
+
+    public void setOriginalLanguage(Language originalLanguage) {
+        this.originalLanguage = originalLanguage;
+    }
+
+    public List<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
     }
 }

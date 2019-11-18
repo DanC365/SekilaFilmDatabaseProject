@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
         name = "getFilmCategories",
         query = "SELECT a FROM Category a JOIN FilmCategory b ON b.categoryId = a.categoryId WHERE b.filmId = :filmId"
 )
+@Deprecated
 public class FilmCategory {
     @Id
     @Column(name = "film_id")

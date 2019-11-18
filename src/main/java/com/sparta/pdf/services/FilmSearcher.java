@@ -26,6 +26,7 @@ public class FilmSearcher implements Serializable {
         return results;
     }
 
+    @Deprecated
     public List<Category> getCategories(int filmId){
         Query query = entityManager.createNamedQuery("getFilmCategories");
         query.setParameter("filmId",filmId);
