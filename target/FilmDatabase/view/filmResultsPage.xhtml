@@ -4,7 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
 <ui:composition template="/WEB-INF/templates/template.xhtml">
     <ui:define name="content">
         <h1>Results for search "#{searchQueryBean.searchQuery}"</h1>
@@ -20,6 +21,35 @@
 
             <h:commandButton value="submit" action="filmResultsPage" /><br/>
             #{filmSearchResultsBean.getSearchResults().size()} results<br/>
+
+            <p:dataView  value="#{filmSearchResultsBean.searchResults}"  var="film" rows="6" paginator="true"
+                        rowsPerPageTemplate="6,12,18"
+                        paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                        >
+                <f:facet name="header">
+                    List of Films
+                </f:facet>
+                <p:dataViewGridItem columns="1">
+                    <p:panel header="#{film.title}" style="text-align: center">
+                        <h:panelGrid columns="1" style="width: 100%">
+<!--                            <p:graphicImage library="images" name="film_icon.png" style="width: 50%"/>-->
+                            <h:outputText value="#{film.releaseYear}"/>
+<!--                            <p:commandLink update=":form:filmDetail" oncomplete="PF('filmDialog').show()"-->
+<!--                                           title="View Detail">-->
+<!--                                <h:outputText value="More Details" styleClass="pi pi-search" style="margin:0 auto;"/>-->
+                                <!--   <f:setPropertyActionListener value="#{film}" target="#{filmBean.selectedFilm}"/>-->
+<!--                            </p:commandLink>-->
+                        </h:panelGrid>
+                    </p:panel>
+                </p:dataViewGridItem>
+
+
+
+            </p:dataView>
+
+
+
+
 
             <ui:repeat value="#{filmSearchResultsBean.getSearchResults()}" var="value">
                 <h1><h:commandLink action="#{filmBean.setActiveFilm(value)}">#{value.getTitle()}(#{value.getReleaseYear()})</h:commandLink></h1>
