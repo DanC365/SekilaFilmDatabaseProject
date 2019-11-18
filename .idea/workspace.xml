@@ -7,26 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e219d84-4f64-40eb-bfab-0fcf03037ee3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/Language.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/actors/ActorFilmBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/actors/ActorFilmBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/actors/ActorSearchResultsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/actors/ActorSearchResultsBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/films/FilmActorBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/films/FilmActorBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/films/FilmSearchResultsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/films/FilmSearchResultsBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/ActorSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/ActorSearcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/FilmActorRetriever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/FilmActorRetriever.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/FilmCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/FilmCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/FilmSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/FilmSearcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/actors/ActorFilmBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/actors/ActorFilmBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/actors/ActorSearchResultsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/actors/ActorSearchResultsBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/films/FilmActorBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/films/FilmActorBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/films/FilmSearchResultsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/films/FilmSearchResultsBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/services/ActorSearcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/services/ActorSearcher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/services/FilmSearcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/services/FilmSearcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/actors/ActorFilmBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/actors/ActorFilmBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/actors/ActorSearchResultsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/actors/ActorSearchResultsBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/films/FilmActorBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/films/FilmActorBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/films/FilmSearchResultsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/films/FilmSearchResultsBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/services/ActorSearcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/services/ActorSearcher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/services/FilmSearcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/services/FilmSearcher.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,39 +66,7 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="sakila: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="city: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sakila@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sakila: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="country: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sakila@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sakila: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="customer: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sakila@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sakila: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="inventory: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sakila@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sakila: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="store: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="language: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -296,7 +255,7 @@
       <workItem from="1573913495636" duration="471000" />
       <workItem from="1573914154498" duration="8893000" />
       <workItem from="1573923789305" duration="1394000" />
-      <workItem from="1573925417825" duration="23407000" />
+      <workItem from="1573925417825" duration="25406000" />
     </task>
     <servers />
   </component>
