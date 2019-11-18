@@ -5,6 +5,8 @@ import com.sparta.pdf.components.Film;
 import com.sparta.pdf.services.ActorSearcher;
 import com.sparta.pdf.services.FilmActorRetriever;
 
+import javax.enterprise.context.Conversation;
+import javax.enterprise.context.ConversationScoped;
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -15,7 +17,8 @@ import java.util.List;
 import java.util.Map;
 
 @Named
-@ViewScoped
+//@ViewScoped
+@ConversationScoped
 public class ActorSearchResultsBean implements Serializable {
     @Inject
     private ActorSearcher actorSearcher;
@@ -24,8 +27,12 @@ public class ActorSearchResultsBean implements Serializable {
     private List<Actor> searchResults=new ArrayList<>();
     private Map<Actor,List<Film>> films;
 
+    @Inject
+    private Conversation conversation;
+
     public void performSearch(String searchQuery){
         searchResults = actorSearcher.doSearch(searchQuery);
+        conversation.begin();
         populateFilms();
     }
 
