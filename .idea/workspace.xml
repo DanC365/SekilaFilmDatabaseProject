@@ -7,16 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e219d84-4f64-40eb-bfab-0fcf03037ee3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/Stores/StoreBeans.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/Store.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/StoreRetriever.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/storeList.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f9142185-717e-4680-ab25-009c6ffe8b97.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f9142185-717e-4680-ab25-009c6ffe8b97.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/actors/ActorFilmBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/actors/ActorFilmBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/actors/ActorSearchResultsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/actors/ActorSearchResultsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/films/FilmActorBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/films/FilmActorBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/films/FilmSearchResultsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/films/FilmSearchResultsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/ActorSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/ActorSearcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/FilmActorRetriever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/FilmActorRetriever.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/FilmSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/FilmSearcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/actors/ActorFilmBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/actors/ActorFilmBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/actors/ActorSearchResultsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/actors/ActorSearchResultsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/films/FilmActorBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/films/FilmActorBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/films/FilmSearchResultsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/films/FilmSearchResultsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/services/ActorSearcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/services/ActorSearcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/services/FilmSearcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/services/FilmSearcher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/actors/ActorFilmBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/actors/ActorFilmBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/actors/ActorSearchResultsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/actors/ActorSearchResultsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/films/FilmActorBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/films/FilmActorBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/films/FilmSearchResultsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/films/FilmSearchResultsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/services/ActorSearcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/services/ActorSearcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/services/FilmSearcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/services/FilmSearcher.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -285,7 +296,7 @@
       <workItem from="1573913495636" duration="471000" />
       <workItem from="1573914154498" duration="8893000" />
       <workItem from="1573923789305" duration="1394000" />
-      <workItem from="1573925417825" duration="21074000" />
+      <workItem from="1573925417825" duration="23407000" />
     </task>
     <servers />
   </component>
