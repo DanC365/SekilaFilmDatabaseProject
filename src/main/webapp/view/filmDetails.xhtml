@@ -8,6 +8,14 @@
 <ui:composition template="/WEB-INF/templates/template.xhtml">
     <ui:define name="content">
         <h1>#{filmBean.activeFilm.getTitle()}(#{filmBean.activeFilm.releaseYear})</h1>
+        #{filmBean.activeFilm.getDescription()}<br/>
+        Age Rating: #{filmBean.activeFilm.getAgeRating()}<br/>
+        Movie Duration: #{filmBean.activeFilm.getLength()}<br/>
+        Genre(s): #{filmBean.getCategoriesString()}<br/>
+        Special Features: #{filmBean.activeFilm.getSpecialFeatures()}
+
+
+
         #{filmActorBean.setActorList(filmBean.activeFilm)}
         <h2>Starring: </h2>
         <h:form>

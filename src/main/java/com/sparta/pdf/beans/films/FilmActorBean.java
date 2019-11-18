@@ -22,6 +22,7 @@ public class FilmActorBean implements Serializable {
         actorList = filmActorRetriever.getActorsByFilmId(film.getFilmId());
     }
 
+
     public List<Actor> getActorList(){
         return actorList;
     }

@@ -3,8 +3,6 @@ package com.sparta.pdf.components;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "film")
@@ -35,14 +33,13 @@ public class Film {
     @Column(name = "Length")
     private int length;
     @Column(name = "replacement_cost")
-    private double replacmentCost;
+    private double replacementCost;
     @Column(name = "rating")
     private String ageRating;
     @Column(name = "special_features")
     private String specialFeatures;
     @Column(name = "last_update")
     private LocalDateTime lastUpdated;
-
 
     public int getFilmId() {
         return filmId;
@@ -100,12 +97,12 @@ public class Film {
         this.length = length;
     }
 
-    public double getReplacmentCost() {
-        return replacmentCost;
+    public double getReplacementCost() {
+        return replacementCost;
     }
 
-    public void setReplacmentCost(double replacmentCost) {
-        this.replacmentCost = replacmentCost;
+    public void setReplacementCost(double replacementCost) {
+        this.replacementCost = replacementCost;
     }
 
     public String getAgeRating() {

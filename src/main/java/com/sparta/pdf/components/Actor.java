@@ -34,6 +34,7 @@ public class Actor {
     @Column(name="last_update")
     private LocalDateTime lastUpdate;
 
+
     public int getActorId() {
         return actorId;
     }
