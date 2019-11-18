@@ -16,13 +16,11 @@ import java.util.List;
 public class FilmBean {
 
     private Film activeFilm;
-    private List<Category> filmCategories;
     @Inject
     FilmSearcher filmSearcher;
 
     public String setActiveFilm(Film film){
         activeFilm = film;
-        filmCategories = filmSearcher.getCategories(film.getFilmId());
         return "filmDetails";
     }
 
@@ -30,16 +28,15 @@ public class FilmBean {
         return activeFilm;
     }
 
-    public List<Category> getFilmCategories(){
-        return filmCategories;
-    }
+
 
 
     public String getCategoriesString() {
         String output = "";
-        for(int i=0;i<filmCategories.size();i++){
-            output+=filmCategories.get(i).getName();
-            if(i<filmCategories.size()-1){
+
+        for(int i=0;i<activeFilm.getCategories().size();i++){
+            output+=activeFilm.getCategories().get(i).getName();
+            if(i<activeFilm.getCategories().size()-1){
                 output+="/";
             }
 
