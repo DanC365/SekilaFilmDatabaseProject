@@ -1,20 +1,22 @@
-package com.sparta.rho.components;
+package com.sparta.pdf.components;
 
 import javax.persistence.*;
 
 @Entity
-@NamedQueries({
+@Table(name = "users")
+
+//@NamedQueries({
         @NamedQuery(
                 name = "getUsernameAndPassword",
-                query = "SELECT u FROM users u WHERE u.username = :usernameInput and u.userPassword =:userPasswordInput"
-        ),
-
-})
+                query = "SELECT u FROM User u WHERE u.username = :usernameInput "
+        )
+//})
 
 public class User {
     @Id
     @Column(name="user_id")
     private int userId;
+    @Column(name = "username")
     private String username;
     @Column(name="first_name")
     private String firstName;

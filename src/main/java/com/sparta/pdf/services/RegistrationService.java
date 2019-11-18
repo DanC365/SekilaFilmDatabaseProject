@@ -1,6 +1,7 @@
 package com.sparta.pdf.services;
 
-import com.sparta.rho.components.User;
+import com.sparta.pdf.components.User;
+
 
 
 import javax.inject.Named;

@@ -7,11 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e219d84-4f64-40eb-bfab-0fcf03037ee3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/RegistrationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/users/UserBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/login.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f9142185-717e-4680-ab25-009c6ffe8b97.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f9142185-717e-4680-ab25-009c6ffe8b97.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/RegistrationService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,28 +42,7 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="sakila@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sakila@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sakila: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sakila@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sakila: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sakila@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sakila: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="film: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -95,7 +78,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/view" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -108,11 +91,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Richard Ho\IdeaProjects\SekilaFilmDatabaseProject\src\main\webapp\view" />
       <recent name="C:\Users\Richard Ho\IdeaProjects\SekilaFilmDatabaseProject\src\main\java\com\sparta\pdf\services" />
       <recent name="C:\Users\Richard Ho\IdeaProjects\SekilaFilmDatabaseProject\src\main\java\com\sparta\pdf\components" />
       <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\java\com\sparta\pdf\beans\actors" />
       <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\WEB-INF\templates" />
-      <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sparta.pdf.beans.users" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\WEB-INF" />
@@ -223,6 +209,7 @@
       <workItem from="1573914154498" duration="8893000" />
       <workItem from="1573923789305" duration="1394000" />
       <workItem from="1573925417825" duration="7839000" />
+      <workItem from="1574078778571" duration="2168000" />
     </task>
     <servers />
   </component>
