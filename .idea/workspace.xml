@@ -6,17 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e219d84-4f64-40eb-bfab-0fcf03037ee3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/users/UserBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/login.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f9142185-717e-4680-ab25-009c6ffe8b97.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f9142185-717e-4680-ab25-009c6ffe8b97.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/components/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/services/RegistrationService.java" afterDir="false" />
-    </list>
+    <list default="true" id="7e219d84-4f64-40eb-bfab-0fcf03037ee3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,17 +24,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sakila@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sakila@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
