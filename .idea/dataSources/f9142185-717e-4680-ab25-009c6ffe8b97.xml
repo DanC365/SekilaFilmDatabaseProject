@@ -2172,316 +2172,288 @@ customer_id</ColNames>
       <RefColNames>address_id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="474" parent="298" name="user_id">
+    <column id="474" parent="298" name="username">
       <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="475" parent="298" name="username">
-      <Position>2</Position>
       <DataType>varchar(15)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="476" parent="298" name="first_name">
+    <column id="475" parent="298" name="user_password">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="476" parent="298" name="customer_id">
       <Position>3</Position>
-      <DataType>varchar(20)|0s</DataType>
+      <DataType>smallint(5) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="477" parent="298" name="last_name">
-      <Position>4</Position>
-      <DataType>varchar(30)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="478" parent="298" name="email">
-      <Position>5</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="479" parent="298" name="user_password">
-      <Position>6</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="480" parent="298" name="username">
-      <ColNames>username</ColNames>
-      <Unique>1</Unique>
+    <index id="477" parent="298" name="FK_CustomerUser">
+      <ColNames>customer_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="481" parent="298" name="email">
-      <ColNames>email</ColNames>
-      <Unique>1</Unique>
-      <Type>btree</Type>
-    </index>
-    <key id="482" parent="298" name="PRIMARY">
+    <key id="478" parent="298" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>user_id</ColNames>
+      <ColNames>username</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="483" parent="298" name="username">
-      <ColNames>username</ColNames>
-      <UnderlyingIndexName>username</UnderlyingIndexName>
-    </key>
-    <key id="484" parent="298" name="email">
-      <ColNames>email</ColNames>
-      <UnderlyingIndexName>email</UnderlyingIndexName>
-    </key>
-    <column id="485" parent="299" name="actor_id">
+    <foreign-key id="479" parent="298" name="FK_CustomerUser">
+      <ColNames>customer_id</ColNames>
+      <RefTableName>customer</RefTableName>
+      <RefColNames>customer_id</RefColNames>
+    </foreign-key>
+    <column id="480" parent="299" name="actor_id">
       <Position>1</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="486" parent="299" name="first_name">
+    <column id="481" parent="299" name="first_name">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="487" parent="299" name="last_name">
+    <column id="482" parent="299" name="last_name">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="488" parent="299" name="film_info">
+    <column id="483" parent="299" name="film_info">
       <Position>4</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="489" parent="300" name="ID">
+    <column id="484" parent="300" name="ID">
       <Position>1</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="490" parent="300" name="name">
+    <column id="485" parent="300" name="name">
       <Position>2</Position>
       <DataType>varchar(91)|0s</DataType>
     </column>
-    <column id="491" parent="300" name="address">
+    <column id="486" parent="300" name="address">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="492" parent="300" name="zip code">
+    <column id="487" parent="300" name="zip code">
       <Position>4</Position>
       <DataType>varchar(10)|0s</DataType>
     </column>
-    <column id="493" parent="300" name="phone">
+    <column id="488" parent="300" name="phone">
       <Position>5</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="494" parent="300" name="city">
+    <column id="489" parent="300" name="city">
       <Position>6</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="495" parent="300" name="country">
+    <column id="490" parent="300" name="country">
       <Position>7</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="496" parent="300" name="notes">
+    <column id="491" parent="300" name="notes">
       <Position>8</Position>
       <DataType>varchar(6)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="497" parent="300" name="SID">
+    <column id="492" parent="300" name="SID">
       <Position>9</Position>
       <DataType>tinyint(3) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="498" parent="301" name="FID">
+    <column id="493" parent="301" name="FID">
       <Position>1</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
     </column>
-    <column id="499" parent="301" name="title">
+    <column id="494" parent="301" name="title">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="500" parent="301" name="description">
+    <column id="495" parent="301" name="description">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="501" parent="301" name="category">
+    <column id="496" parent="301" name="category">
       <Position>4</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="502" parent="301" name="price">
+    <column id="497" parent="301" name="price">
       <Position>5</Position>
       <DataType>decimal(4,2 digit)|0s</DataType>
     </column>
-    <column id="503" parent="301" name="length">
+    <column id="498" parent="301" name="length">
       <Position>6</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
     </column>
-    <column id="504" parent="301" name="rating">
+    <column id="499" parent="301" name="rating">
       <Position>7</Position>
       <DataType>enum(&apos;G&apos;, &apos;PG&apos;, &apos;PG-13&apos;, &apos;R&apos;, &apos;NC-17&apos;)|0e</DataType>
     </column>
-    <column id="505" parent="301" name="actors">
+    <column id="500" parent="301" name="actors">
       <Position>8</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="506" parent="302" name="FID">
+    <column id="501" parent="302" name="FID">
       <Position>1</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
     </column>
-    <column id="507" parent="302" name="title">
+    <column id="502" parent="302" name="title">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="508" parent="302" name="description">
+    <column id="503" parent="302" name="description">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="509" parent="302" name="category">
+    <column id="504" parent="302" name="category">
       <Position>4</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="510" parent="302" name="price">
+    <column id="505" parent="302" name="price">
       <Position>5</Position>
       <DataType>decimal(4,2 digit)|0s</DataType>
     </column>
-    <column id="511" parent="302" name="length">
+    <column id="506" parent="302" name="length">
       <Position>6</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
     </column>
-    <column id="512" parent="302" name="rating">
+    <column id="507" parent="302" name="rating">
       <Position>7</Position>
       <DataType>enum(&apos;G&apos;, &apos;PG&apos;, &apos;PG-13&apos;, &apos;R&apos;, &apos;NC-17&apos;)|0e</DataType>
     </column>
-    <column id="513" parent="302" name="actors">
+    <column id="508" parent="302" name="actors">
       <Position>8</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="514" parent="303" name="category">
+    <column id="509" parent="303" name="category">
       <Position>1</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="515" parent="303" name="total_sales">
+    <column id="510" parent="303" name="total_sales">
       <Position>2</Position>
       <DataType>decimal(27,2 digit)|0s</DataType>
     </column>
-    <column id="516" parent="304" name="store">
+    <column id="511" parent="304" name="store">
       <Position>1</Position>
       <DataType>varchar(101)|0s</DataType>
     </column>
-    <column id="517" parent="304" name="manager">
+    <column id="512" parent="304" name="manager">
       <Position>2</Position>
       <DataType>varchar(91)|0s</DataType>
     </column>
-    <column id="518" parent="304" name="total_sales">
+    <column id="513" parent="304" name="total_sales">
       <Position>3</Position>
       <DataType>decimal(27,2 digit)|0s</DataType>
     </column>
-    <column id="519" parent="305" name="ID">
+    <column id="514" parent="305" name="ID">
       <Position>1</Position>
       <DataType>tinyint(3) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="520" parent="305" name="name">
+    <column id="515" parent="305" name="name">
       <Position>2</Position>
       <DataType>varchar(91)|0s</DataType>
     </column>
-    <column id="521" parent="305" name="address">
+    <column id="516" parent="305" name="address">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="522" parent="305" name="zip code">
+    <column id="517" parent="305" name="zip code">
       <Position>4</Position>
       <DataType>varchar(10)|0s</DataType>
     </column>
-    <column id="523" parent="305" name="phone">
+    <column id="518" parent="305" name="phone">
       <Position>5</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="524" parent="305" name="city">
+    <column id="519" parent="305" name="city">
       <Position>6</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="525" parent="305" name="country">
+    <column id="520" parent="305" name="country">
       <Position>7</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="526" parent="305" name="SID">
+    <column id="521" parent="305" name="SID">
       <Position>8</Position>
       <DataType>tinyint(3) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <argument id="527" parent="306" name="p_film_id">
+    <argument id="522" parent="306" name="p_film_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
     </argument>
-    <argument id="528" parent="306" name="p_store_id">
+    <argument id="523" parent="306" name="p_store_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
     </argument>
-    <argument id="529" parent="306" name="p_film_count">
+    <argument id="524" parent="306" name="p_film_count">
       <Position>3</Position>
       <ArgumentDirection>O</ArgumentDirection>
       <DataType>int(11)|0s</DataType>
     </argument>
-    <argument id="530" parent="307" name="p_film_id">
+    <argument id="525" parent="307" name="p_film_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
     </argument>
-    <argument id="531" parent="307" name="p_store_id">
+    <argument id="526" parent="307" name="p_store_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
     </argument>
-    <argument id="532" parent="307" name="p_film_count">
+    <argument id="527" parent="307" name="p_film_count">
       <Position>3</Position>
       <ArgumentDirection>O</ArgumentDirection>
       <DataType>int(11)|0s</DataType>
     </argument>
-    <argument id="533" parent="308">
+    <argument id="528" parent="308">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>decimal(5,2 digit)|0s</DataType>
     </argument>
-    <argument id="534" parent="308" name="p_customer_id">
+    <argument id="529" parent="308" name="p_customer_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
     </argument>
-    <argument id="535" parent="308" name="p_effective_date">
+    <argument id="530" parent="308" name="p_effective_date">
       <Position>2</Position>
       <DataType>datetime|0s</DataType>
     </argument>
-    <argument id="536" parent="309">
+    <argument id="531" parent="309">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>int(11)|0s</DataType>
     </argument>
-    <argument id="537" parent="309" name="p_inventory_id">
+    <argument id="532" parent="309" name="p_inventory_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
     </argument>
-    <argument id="538" parent="310">
+    <argument id="533" parent="310">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>tinyint(1)|0s</DataType>
     </argument>
-    <argument id="539" parent="310" name="p_inventory_id">
+    <argument id="534" parent="310" name="p_inventory_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
     </argument>
-    <argument id="540" parent="311" name="min_monthly_purchases">
+    <argument id="535" parent="311" name="min_monthly_purchases">
       <Position>1</Position>
       <DataType>tinyint(3) unsigned|0s</DataType>
     </argument>
-    <argument id="541" parent="311" name="min_dollar_amount_purchased">
+    <argument id="536" parent="311" name="min_dollar_amount_purchased">
       <Position>2</Position>
       <DataType>decimal(10,2 digit) unsigned|0s</DataType>
     </argument>
-    <argument id="542" parent="311" name="count_rewardees">
+    <argument id="537" parent="311" name="count_rewardees">
       <Position>3</Position>
       <ArgumentDirection>O</ArgumentDirection>
       <DataType>int(11)|0s</DataType>
