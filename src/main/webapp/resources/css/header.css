@@ -1,9 +1,6 @@
 .header {
     width: 100%;
     position: fixed;
-    z-index: 100;
-    top: 0px;
-    left: 0px;
     background-color: #ffffff;
     border-style: solid;
     border-color: #d91e4f;

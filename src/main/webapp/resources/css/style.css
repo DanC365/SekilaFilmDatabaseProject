@@ -2,6 +2,8 @@
 @IMPORT url("#{resource['css:header.css']}");
 @IMPORT url("#{resource['css:footer.css']}");
 @IMPORT url("#{resource['css:grid.css']}");
+@IMPORT url("#{resource['css:navBar.css']}");
+
 
 
 * {

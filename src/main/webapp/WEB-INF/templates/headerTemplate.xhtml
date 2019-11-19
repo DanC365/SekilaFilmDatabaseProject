@@ -4,23 +4,41 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
 
-    <ui:composition>
-        <div class="header">
-            <div class="logo">
-                <h:graphicImage library="images" name="spartaLogo.png"/>
-            </div>
-            <h:form>
-                <h:commandLink value="Film Search" action="filmSearchPage"/>
-                <h:commandLink value="Actor Search" action="actorSearchPage"/>
-
-
-            </h:form>
-
-            <div class="headerTitle">
-                <h1>Training Application</h1>
-            </div>
-        </div>
-    </ui:composition>
+<ui:composition>
+    <div class="logo">
+        <h:graphicImage library="images" name="spartaLogo.png"/>
+    </div>
+    <div class="headerTitle">
+        <h1>Film Search Application</h1>
+    </div>
+    <div class="navBar">
+        <h:form>
+            <p:tabMenu class="navBar" activeIndex="#{param.i}">
+                <p:menuitem value="Home" outcome="/view/welcome.xhtml">
+                    <f:param name="i" value="0"/>
+                </p:menuitem>
+                <p:menuitem value="Search By Actor" outcome="/view/actorSearchPage.xhtml">
+                    <f:param name="i" value="1"/>
+                </p:menuitem>
+                <p:menuitem value="Search By Film" outcome="/view/filmSearchPage.xhtml">
+                    <f:param name="i" value="2"/>
+                </p:menuitem>
+                <p:menuitem value="About Us" outcome="/view/actorSearchPage.xhtml">
+                    <f:param name="i" value="3"/>
+                </p:menuitem>
+                <p:menuitem value="Sign Up" outcome="/view/signIn.xhtml">
+                    <f:param name="i" value="4"/>
+                </p:menuitem>
+                <p:menuitem value="Login" outcome="/view/logIn.xhtml">
+                    <f:param name="i" value="5"/>
+                </p:menuitem>
+                <p:menuitem value="Back" onclick="history.go(-1)">
+                </p:menuitem>
+            </p:tabMenu>
+        </h:form>
+    </div>
+</ui:composition>
 </html>

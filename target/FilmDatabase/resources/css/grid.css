@@ -13,7 +13,13 @@
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
 	grid-template-areas:
-			"logo headerTitle";
+			"logo headerTitle"
+			"navBar navBar";
+}
+
+.navBar{
+	grid-area: navBar;
+
 }
 
 .logo {
@@ -30,6 +36,7 @@
 	grid-template-rows: auto;
 	grid-template-areas:
 			"header header header"
+			". navBar ."
 			". content ."
 			". footer .";
 }
