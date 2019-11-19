@@ -22,29 +22,48 @@
             <h:commandButton value="submit" action="filmResultsPage" /><br/>
             #{filmSearchResultsBean.getSearchResults().size()} results<br/>
 
-            <p:dataView  value="#{filmSearchResultsBean.searchResults}"  var="film" rows="6" paginator="true"
+            <p:dataTable value="#{filmSearchResultsBean.searchResults}"  var="film" rows="6" paginator="true"
                         rowsPerPageTemplate="6,12,18"
                         paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
                         >
                 <f:facet name="header">
                     List of Films
                 </f:facet>
-                <p:dataViewGridItem columns="1">
-                    <p:panel header="#{film.title}" style="text-align: center">
-                        <h:panelGrid columns="1" style="width: 100%">
-<!--                            <p:graphicImage library="images" name="film_icon.png" style="width: 50%"/>-->
-                            <h:outputText value="#{film.releaseYear}"/>
-<!--                            <p:commandLink update=":form:filmDetail" oncomplete="PF('filmDialog').show()"-->
-<!--                                           title="View Detail">-->
-<!--                                <h:outputText value="More Details" styleClass="pi pi-search" style="margin:0 auto;"/>-->
-                                <!--   <f:setPropertyActionListener value="#{film}" target="#{filmBean.selectedFilm}"/>-->
-<!--                            </p:commandLink>-->
-                        </h:panelGrid>
+<!--                <p:dataViewGridItem columns="1">-->
+<!--                    <p:panel header="#{film.title}" style="text-align: center">-->
+<!--                        <h:panelGrid columns="1" style="width: 100%">-->
+<!--&lt;!&ndash;                            <p:graphicImage library="images" name="film_icon.png" style="width: 50%"/>&ndash;&gt;-->
+<!--                            <h:outputText value="#{film.releaseYear}"/>-->
+<!--&lt;!&ndash;                            <p:commandLink update=":form:filmDetail" oncomplete="PF('filmDialog').show()"&ndash;&gt;-->
+<!--&lt;!&ndash;                                           title="View Detail">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <h:outputText value="More Details" styleClass="pi pi-search" style="margin:0 auto;"/>&ndash;&gt;-->
+<!--                                &lt;!&ndash;   <f:setPropertyActionListener value="#{film}" target="#{filmBean.activeFilm}"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </p:commandLink>&ndash;&gt;-->
+<!--                        </h:panelGrid>-->
+<!--                    </p:panel>-->
+<!--                </p:dataViewGridItem>-->
+<!--                <p:dataViewListItem>-->
+<!--                    -->
+
+<!--                </p:dataViewListItem>-->
+
+
+                <p:column>
+<!--                    <f:facet name="header"> Film name</f:facet>-->
+                    <p:panel header="#{film.title}">
+                                                <h:panelGrid columns="1" style="width: 100%">
+                                                    <p:graphicImage library="images" name="film_icon.png" style="width: 5%"/>
+                                                    <h:outputText value="#{film.releaseYear}"/>
+<!--                                                    <p:commandLink update=":form:filmDetail" oncomplete="PF('filmDialog').show()"-->
+<!--                                                                   title="View Detail">-->
+                                                        <h:outputText value="More Details" styleClass="pi pi-search" style="margin:0 auto;"/>
+<!--                                                           <f:setPropertyActionListener value="#{film}" target="#{filmBean.activeFilm}"/>-->
+<!--                                                    </p:commandLink>-->
+                                                </h:panelGrid>
                     </p:panel>
-                </p:dataViewGridItem>
 
-
-            </p:dataView>
+                </p:column>
+            </p:dataTable>
 
 
 
