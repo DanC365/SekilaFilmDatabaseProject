@@ -7,13 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e219d84-4f64-40eb-bfab-0fcf03037ee3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/film_icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/films/FilmBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/pdf/beans/films/FilmBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/filmResultsPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/filmResultsPage.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/films/FilmBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/WEB-INF/classes/com/sparta/pdf/beans/films/FilmBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FilmDatabase/view/filmResultsPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/FilmDatabase/view/filmResultsPage.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/films/FilmBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/pdf/beans/films/FilmBean.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,15 +114,16 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\java\com\sparta\pdf\beans\actors" />
       <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\WEB-INF\templates" />
       <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\resources" />
       <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\resources\images" />
+      <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\Daniel Curtis\IdeaProjects\FilmDatabase\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -250,7 +248,7 @@
       <workItem from="1573913495636" duration="471000" />
       <workItem from="1573914154498" duration="8893000" />
       <workItem from="1573923789305" duration="1394000" />
-      <workItem from="1573925417825" duration="30940000" />
+      <workItem from="1573925417825" duration="35043000" />
     </task>
     <servers />
   </component>
